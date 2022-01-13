@@ -58,6 +58,6 @@ public interface IInventoryDao extends ITransactionDao{
 	/**
 	 * 
 	 * */
-	boolean addInventoryItem(InventoryItem item, Product product) throws DaoException;
+	//boolean addInventoryItem(InventoryItem item, Product product) throws DaoException;
 	
 }

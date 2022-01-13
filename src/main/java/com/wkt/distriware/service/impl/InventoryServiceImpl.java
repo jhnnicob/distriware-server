@@ -69,7 +69,7 @@ public class InventoryServiceImpl implements InventoryService {
 		}
 
 		// Get new reference number
-		String referenceNumber = inventoryDao.getReferenceNumber("INVENTORY", "INVOICE", 1012);
+		String referenceNumber = inventoryDao.getReferenceNumber("INVENTORY", "INVOICE", inventoryId);
 		if (referenceNumber == null) {
 			throw new BusinessException("Unable to get inventory reference number");
 		}

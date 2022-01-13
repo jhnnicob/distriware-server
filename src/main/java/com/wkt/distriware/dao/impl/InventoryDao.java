@@ -105,7 +105,7 @@ public class InventoryDao extends BaseDao implements IInventoryDao {
 		return affected > 0;
 	}
 	
-	@Override
+	//@Override
 	public boolean addInventoryItem(Inventory inventory, InventoryItem item, Product product) throws DaoException {
 		SimpleJdbcCall jcbccall = new SimpleJdbcCall(jdbcTemplate).withProcedureName("INVENTORY_ADD");
 				
